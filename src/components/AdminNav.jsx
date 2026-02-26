@@ -11,7 +11,7 @@ const navItems = [
   { label: "Leadership Management", icon: "🏆", href: "/leadership" },
   { label: "Backup & Recovery", icon: "💾", href: "/backup" },
   { label: "Activity Logs", icon: "📋", href: "/activity" },
-  { label: "Settings", icon: "⚙️", href: "/settings" },
+  { label: "Settings", icon: "⚙️", href: "/adminSettings" },
 ];
 
 export default function AdminNav({ sidebarOpen, setSidebarOpen }) {

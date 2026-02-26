@@ -2,6 +2,8 @@ import { Routes, Route, Outlet } from 'react-router-dom'
 import { Header, Footer } from './components/Layout'
 import { CartProvider } from "./context/CartContext";
 
+
+
 import Jem8HomePage from './Jem8HomePage'
 import About from './pages/About'
 import Blog from './pages/Blog'
@@ -12,6 +14,7 @@ import Checkout from "./pages/Checkout";
 import MyOrders from "./pages/MyOrders";
 import AdminProducts from "./pages/adminProducts";
 import AdminDashboard from "./pages/adminDashboard";
+import AdminPanelSettings from "./pages/adminSettings";
 
 // Layout for public pages (with main Header & Footer)
 function PublicLayout() {
@@ -51,6 +54,7 @@ export default function App() {
         <Route element={<AdminLayout />}>
           <Route path="/adminDashboard" element={<AdminDashboard />} />
           <Route path="/adminProducts" element={<AdminProducts />} />
+          <Route path="/adminSettings" element={<AdminPanelSettings />} />
         </Route>
       </Routes>
     </CartProvider>
