@@ -3,6 +3,7 @@ import { Header, Footer } from './components/Layout'
 import { CartProvider } from "./context/CartContext";
 
 import Jem8HomePage from './Jem8HomePage'
+import About from './pages/About'
 import Blog from './pages/Blog'
 import Products from "./pages/Products";
 import ProductView from "./pages/ProductView";
@@ -29,6 +30,7 @@ export default function App() {
         {/* Public routes with layout */}
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Jem8HomePage />} />
+           <Route path="/About" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductView />} />
