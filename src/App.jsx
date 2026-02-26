@@ -4,6 +4,7 @@ import { CartProvider } from "./context/CartContext";
 
 import Jem8HomePage from './Jem8HomePage'
 import About from './pages/About'
+import Profilepersonal from './pages/Profilepersonal'
 import Blog from './pages/Blog'
 import Products from "./pages/Products";
 import ProductView from "./pages/ProductView";
@@ -41,7 +42,10 @@ export default function App() {
         {/* Public routes */}
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Jem8HomePage />} />
+          {/* Keep BOTH routes - case sensitive paths */}
           <Route path="/about" element={<About />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Profilepersonal" element={<Profilepersonal />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductView />} />
@@ -50,15 +54,15 @@ export default function App() {
           <Route path="/orders" element={<MyOrders />} />
         </Route>
 
-        {/* Admin routes — sidebar nav is inside each page component via AdminNav */}
+        {/* Admin routes */}
         <Route element={<AdminLayout />}>
           <Route path="/adminDashboard" element={<AdminDashboard />} />
           <Route path="/adminProducts" element={<AdminProducts />} />
           <Route path="/adminSettings" element={<AdminPanelSettings />} />
           <Route path="/adminLeadership" element={<AdminLeadership />} />
           <Route path="/adminOrders" element={<AdminOrders />} />
-          <Route path="/adminBackup" element={<AdminBackup />} />     {/* from Marvin */}
-          <Route path="/adminContact" element={<AdminContactMessages />} /> {/* from you */}
+          <Route path="/adminBackup" element={<AdminBackup />} />
+          <Route path="/adminContact" element={<AdminContactMessages />} />
         </Route>
       </Routes>
     </CartProvider>

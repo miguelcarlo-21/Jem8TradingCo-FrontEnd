@@ -203,7 +203,6 @@ export default function Jem8HomePage() {
         <Testimonials />
         <CtaBanner />
       </main>
-      
     </>
   );
 }
