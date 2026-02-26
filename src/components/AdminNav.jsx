@@ -10,7 +10,7 @@ const mainNavItems = [
   { label: "Account Management", icon: "👤", href: "/account" },
   { label: "Customer Reports", icon: "📊", href: "/reports" },
   { label: "Leadership Management", icon: "🏆", href: "/adminLeadership" },
-  { label: "Backup & Recovery", icon: "💾", href: "/backup" },
+  { label: "Backup & Recovery", icon: "💾", href: "/adminBackup" },
   { label: "Activity Logs", icon: "📋", href: "/activity" },
   // Reviews ay hindi ilalagay dito (p lang)
   { label: "Messages", icon: "✉️", href: "/messages" },

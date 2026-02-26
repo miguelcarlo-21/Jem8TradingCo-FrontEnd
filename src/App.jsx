@@ -17,6 +17,8 @@ import AdminDashboard from "./pages/adminDashboard";
 import AdminPanelSettings from "./pages/adminSettings";
 import AdminLeadership from "./pages/adminLeadership";
 import AdminOrders from './pages/adminOrders';
+import AdminBackup from './pages/adminBackup';
+
 
 // Layout for public pages (with main Header & Footer)
 function PublicLayout() {
@@ -59,6 +61,7 @@ export default function App() {
           <Route path="/adminSettings" element={<AdminPanelSettings />} />
           <Route path="/adminLeadership" element={<AdminLeadership />} />
           <Route path="/adminOrders" element={<AdminOrders />} />
+          <Route path="/adminBackup" element={<AdminBackup />} />
           
         </Route>
       </Routes>
