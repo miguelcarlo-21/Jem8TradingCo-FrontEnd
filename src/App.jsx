@@ -2,8 +2,6 @@ import { Routes, Route, Outlet } from 'react-router-dom'
 import { Header, Footer } from './components/Layout'
 import { CartProvider } from "./context/CartContext";
 
-
-
 import Jem8HomePage from './Jem8HomePage'
 import About from './pages/About'
 import Blog from './pages/Blog'
@@ -17,8 +15,9 @@ import AdminDashboard from "./pages/adminDashboard";
 import AdminPanelSettings from "./pages/adminSettings";
 import AdminLeadership from "./pages/adminLeadership";
 import AdminOrders from './pages/adminOrders';
-
+import AdminBackup from './pages/adminBackup';
 import AdminContactMessages from './pages/adminContact';
+
 // Layout for public pages (with main Header & Footer)
 function PublicLayout() {
   return (
@@ -31,8 +30,6 @@ function PublicLayout() {
 }
 
 // Layout for admin pages
-// NOTE: AdminDashboard and AdminProducts each render their own
-// AdminNav sidebar internally, so no extra nav wrapper needed here.
 function AdminLayout() {
   return <Outlet />;
 }
@@ -60,9 +57,8 @@ export default function App() {
           <Route path="/adminSettings" element={<AdminPanelSettings />} />
           <Route path="/adminLeadership" element={<AdminLeadership />} />
           <Route path="/adminOrders" element={<AdminOrders />} />
-
-        
-          <Route path="/adminContact" element={<AdminContactMessages />} />
+          <Route path="/adminBackup" element={<AdminBackup />} />     {/* from Marvin */}
+          <Route path="/adminContact" element={<AdminContactMessages />} /> {/* from you */}
         </Route>
       </Routes>
     </CartProvider>

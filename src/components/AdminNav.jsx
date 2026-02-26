@@ -9,7 +9,7 @@ const mainNavItems = [
   { label: "Account Management", icon: "👤", href: "/account" },
   { label: "Customer Reports", icon: "📊", href: "/adminContact" },
   { label: "Leadership Management", icon: "🏆", href: "/adminLeadership" },
-  { label: "Backup & Recovery", icon: "💾", href: "/backup" },
+  { label: "Backup & Recovery", icon: "💾", href: "/adminBackup" },
   { label: "Activity Logs", icon: "📋", href: "/activity" },
   { label: "Messages", icon: "✉️", href: "/messages" },
 ];
