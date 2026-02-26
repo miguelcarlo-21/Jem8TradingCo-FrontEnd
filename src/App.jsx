@@ -18,6 +18,7 @@ import AdminPanelSettings from "./pages/adminSettings";
 import AdminLeadership from "./pages/adminLeadership";
 import AdminOrders from './pages/adminOrders';
 
+import AdminContactMessages from './pages/adminContact';
 // Layout for public pages (with main Header & Footer)
 function PublicLayout() {
   return (
@@ -59,7 +60,9 @@ export default function App() {
           <Route path="/adminSettings" element={<AdminPanelSettings />} />
           <Route path="/adminLeadership" element={<AdminLeadership />} />
           <Route path="/adminOrders" element={<AdminOrders />} />
-          
+
+        
+          <Route path="/adminContact" element={<AdminContactMessages />} />
         </Route>
       </Routes>
     </CartProvider>

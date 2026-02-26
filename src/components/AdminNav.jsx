@@ -1,18 +1,16 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-// Main navigation items (lahat except Settings)
 const mainNavItems = [
   { label: "Dashboard", icon: "⊞", href: "/adminDashboard" },
   { label: "Products", icon: "📦", href: "/adminProducts" },
   { label: "Orders", icon: "🛒", href: "/adminOrders" },
   { label: "Blog Post", icon: "📝", href: "/blog" },
   { label: "Account Management", icon: "👤", href: "/account" },
-  { label: "Customer Reports", icon: "📊", href: "/reports" },
+  { label: "Customer Reports", icon: "📊", href: "/adminContact" },
   { label: "Leadership Management", icon: "🏆", href: "/adminLeadership" },
   { label: "Backup & Recovery", icon: "💾", href: "/backup" },
   { label: "Activity Logs", icon: "📋", href: "/activity" },
-  // Reviews ay hindi ilalagay dito (p lang)
   { label: "Messages", icon: "✉️", href: "/messages" },
 ];
 
