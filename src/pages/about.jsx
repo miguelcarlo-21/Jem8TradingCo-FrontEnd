@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../style/about.css';
 import '../style/global.css';
-?
+
 // Leader images
 import Shella from '../assets/Shella_Ricafrente-Acibar.png';
 import Jinkie from '../assets/Jinkie_Ricafrente-Malinag.png';
